@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(45deg, #010758, #490d61);
+        color: white;
+      }
+
+      h1 {
+        font-size: 38px;
+        text-decoration: underline;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .nav-links {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        padding-left: 10px;
+        color: white;
+      }
+
+      .nav-links a:hover {
+        color: black;
+      }
+
+      .container form {
+        text-align: center;
+        margin-top: 50px;
+      }
+      button {
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: #490d61;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Photo Gallery App</h1>
+
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/Gallery">Gallery</a>
+    </nav>
+
+    <div class="container">
+      <form action="/" method="post" enctype="multipart/form-data">
+        <div>
+          <label for="coverImage">Upload Image:</label>
+          <input type="file" name="coverImage" id="coverImage" />
+        </div>
+        <div>
+          <button type="submit">Upload</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
